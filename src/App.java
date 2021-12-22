@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class App {
 
     static Scanner teclado = new Scanner(System.in);
+    private static String nome;
     public static void main(String[] args) throws Exception {
 
         Cadastro cadastro = new Cadastro();

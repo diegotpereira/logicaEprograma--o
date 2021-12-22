@@ -4,9 +4,7 @@ import java.util.Scanner;
 public class Cadastro {
 
     ArrayList<Aluno> listaAlunos = new ArrayList<Aluno>();
-
     
-
     Scanner teclado =  new Scanner(System.in);
 
     public void listar() {
