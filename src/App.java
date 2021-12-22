@@ -11,6 +11,7 @@ public class App {
             
             System.out.println("1 - Cadastrar Pessoa");
             System.out.println("2 - Exibir Agenda");
+            System.out.println("3 - Buscar na Agenda");
             System.out.println("6 - Sair");
             System.out.println("Escolha sua opção: ");
 
@@ -24,6 +25,9 @@ public class App {
                 case 2:
                     cadastro.listar();
                     break;
+
+                case 3:
+                cadastro.buscar(nome);
             
                 default:
                     System.out.println("\nOpção inválida\n");

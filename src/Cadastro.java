@@ -32,4 +32,36 @@ public class Cadastro {
 
         listaAlunos.add(aluno);
     }
+
+    public int buscar(String nome) {
+
+        System.out.println("\nInforme o nome a ser procurado: ");
+        nome = teclado.nextLine();
+
+        int indice = 0;
+
+        if (indice < 0) {
+            System.out.println("\nA pessoa não foi localizada.");
+        } else {
+            System.out.println("\nA pessoa foi localizada na posição: " + 
+            indice);
+        }
+
+        int resultado = -1;
+
+        for(int i = 0; i < listaAlunos.size(); i++) {
+                
+            if (listaAlunos.get(i) != null) {
+                
+                if (listaAlunos.get(i).getNome().equals(nome)) {
+                    
+                    resultado = i;
+
+                    break;
+                }
+            }
+        }
+
+        return resultado;
+    }
 }
